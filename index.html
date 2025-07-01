@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chef's Journey</title>
+    <link rel="icon" href="download.png">
+    <link rel="stylesheet" href="sample.css">
+</head>
+<body>
+    <header>
+        <div class="left-group">
+            <img src="download.jpeg" alt="Chef's Journey Logo" class="logo">
+            <span class="welcome-text">Welcome to Chef's Journey</span>
+        </div>
+        <nav>
+            <a href="#Home">Home</a>
+            <a href="#About">About</a>
+            <a href="#Recipes">Recipes</a>
+            <a href="#Contact">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section class="home-section" id="Home">
+            <div class="home-image-container">
+                <img src="chef image.jpeg" alt="Chef" class="home-image" id="mainHomeImage">
+            </div>
+            <div class="home-text">
+                <h1>Discover Culinary Excellence</h1>
+                <p>Join us on a journey of taste, tradition, and creativity. Explore recipes, tips, and stories from chefs around the world.</p>
+            </div>
+        </section>
+    </main>
+</body>
+<script>
+    // JavaScript for image change on mouseover/mouseout
+    const homeImg = document.getElementById('mainHomeImage');
+    homeImg.addEventListener('mouseover', () => {
+        homeImg.src = 'recipes.jpeg'; // Replace with your alternate image
+    });
+    homeImg.addEventListener('mouseout', () => {
+        homeImg.src = 'chef image.jpeg'; // Original image
+    });
+</script>
+</html>

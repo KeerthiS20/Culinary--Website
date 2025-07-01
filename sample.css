@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    background: #fff;
+}
+
+header {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    width: 100%;
+    height: 10vh;
+    padding: 0 9%;
+    background-color: blanchedalmond;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.left-group {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+}
+
+.welcome-text {
+    font-size: 1.3rem;
+    color: #333;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 2rem;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: normal;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: #b8860b;
+}
+
+/* Home Section Styles */
+.home-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    margin-top: 10vh;
+    background: linear-gradient(90deg, #fffbe6 0%, #ffe4b5 100%);
+    animation: slideIn 1s ease;
+    padding: 0 10vw;
+    gap: 4vw;
+}
+
+@keyframes slideIn {
+    from { opacity: 0; transform: translateY(40px);}
+    to { opacity: 1; transform: translateY(0);}
+}
+
+.home-image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-image {
+    width: 350px;
+    max-width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    transition: transform 0.3s;
+}
+
+.home-image:hover {
+    transform: scale(1.05);
+}
+
+.home-text {
+    flex: 1;
+    padding-left: 2vw;
+}
+
+.home-text h1 {
+    font-size: 2.5rem;
+    color: #b8860b;
+    margin-bottom: 1rem;
+}
+
+.home-text p {
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.6;
+}
